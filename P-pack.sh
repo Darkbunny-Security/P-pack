@@ -1,6 +1,5 @@
-#!/bin/bash 
+#!/bin/bash
 #Coder: Psychør4ptør
-#Coder: Agent-2k40
 
 
 #==========================================================================
@@ -8,42 +7,39 @@
 #--------------------------------------------------------------------------
 Reply(){
 	clear;
+	echo "======================================================"
+	echo "»»»»»»»»»»»»»»»»»»»»»» P-Pack ««««««««««««««««««««««««"
+	echo "======================================================"
 	echo ""
-	echo "  []                            øøøøøøøøøøøøøøøø"
-        echo "  ||             øøøøøøøøøøøøøø|»»   DBUNNY   ««|"
-        echo " [øøøøøøøøøøøøøø|»»  P-Pack  ««|øøøøøøøøøøøøøøøø        ~"
-	echo " [»»  Psychø  ««|øøøøøøøøøøøøøøø´"
-	echo " [øøøøøøøøøøøøøøø´                       ~"
-	echo " '||-'                                                          ~"
-	echo "  ||                              ~                 ~"
-	echo "  ||"
-	echo " _||_______________________"
-	echo "| []                       |"
-	echo "|==========================|"
-	echo "|==========================|"
-	echo "|                          |"
-	echo "|[!] Instalador de Pacotes |"
+	echo "------------------------------------------------------"
+	echo " _ _"
+	echo "(˘©˘) P-Pack simplifica suas instalações"
+	echo ""
+	echo '"DarkBunny, estamos senpre por perto."'
+	echo "------------------------------------------------------"
 	echo ""
 	echo ""
-	echo " [ø] 1  - Pygame	     Modulo python para desenvolvimento de jogo"
-	echo " [ø] 2  - Pip		     Gerenciador de pacotes instalador de bibliotecas python"
-	echo " [ø] 3  - Gimp		     Editor de imagem"
-	echo " [ø] 4  - Aircrack-ng        Suit com programas para quebra de redes"
-	echo " [ø] 5  - Build-essential    Metapacote com diversas aplicações para compilar/instalar"
-	echo " [ø] 6  - Crunch             Ferramenta para gerar wordlist"
-	echo " [ø] 7  - Reaver	     Ferramenta para ataques WPS"
-	echo " [ø] 8  - Brasero            Ferramenta para gravações de midias"
-	echo " [ø] 9  - Nmap	             Ferramenta para analisar serviços em geral"
-	echo " [ø] 10 - Sqlmap	     Ferramenta para acessar banco de dados"
-	echo " [ø] 11 - Sublime-text 3     Editor de texto para programadores"
-	echo " [ø] 12 - Unity3d	     Software para desenvolvimento de jogos"
-	echo " [ø] 13 - Laby               Jogo logico para programadores"
+	echo " [·] 1  - Pygame*	     Modulo python para desenvolvimento de jogo"
+	echo " [·] 2  - Pip		     Gerenciador de pacotes instalador de bibliotecas python"
+	echo " [·] 3  - Gimp		     Editor de imagem"
+	echo " [·] 4  - Aircrack-ng        Suit com programas para quebra de redes"
+	echo " [·] 5  - Build-essential    Metapacote com diversas aplicações para compilar/instalar"
+	echo " [·] 6  - Crunch             Ferramenta para gerar wordlist"
+	echo " [·] 7  - Reaver	     Ferramenta para ataques WPS"
+	echo " [·] 8  - Brasero            Ferramenta para gravações de midias"
+	echo " [·] 9  - Nmap	             Ferramenta para analisar serviços em geral"
+	echo " [·] 10 - Sqlmap	     Ferramenta para acessar banco de dados"
+	echo " [·] 11 - Sublime-text 3     Editor de texto para programadores"
+	echo " [·] 12 - Unity3d	     Software para desenvolvimento de jogos"
+	echo " [·] 13 - Laby               Jogo logico para programadores"
 	echo ""
-	echo " [x] 0  - Sair"
+	echo " [·] 0  - Sair"
 	echo ""
 	echo ""
+	echo "(*) Simboliza que programas instalados podem ser desinstalados no mesmo digito "
 	echo ""
-    read -p "[*] Deseja instalar » " REPLY;
+	echo ""
+    read -p "[*] Deseja instalar »  " REPLY;
 }
 #==========================================================================
 
@@ -54,7 +50,7 @@ Reply(){
 Verify(){
 	if [ "$REPLY" == "1" ]
 	then
-		gnome-terminal -x bash -c 'pip install pygame; apt-get update; echo "y"|apt-get upgrade; clear;\
+		gnome-terminal -x bash -c 'sudo apt-get purge python && sudo apt-get install python2.7; sudo apt-get install python-pygame; apt-get update; echo "y"|apt-get upgrade; clear;\
 		echo "→→→→→→→→→→→→→→→→→"
 		echo "[!] Pacote Pygame"
 		echo "←←←←←←←←←←←←←←←←←";\
@@ -70,7 +66,7 @@ Verify(){
 #--------------------------------------------------------------------------
 	elif [ "$REPLY" == "3" ]
 	then
-		gnome-terminal -x bash -c 'sudo apt install gimp; apt-get update; echo "y"|apt-get upgrade; clear;\
+		gnome-terminal -x bash -c 'sudo add-apt-repository ppa:otto-kesselgulasch/gimp -y && sudo apt-get update && sudo apt-get install gimp -y; clear;\
                 echo "→→→→→→→→→→→→→→→"
                 echo "[!] Pacote Gimp"
                 echo "←←←←←←←←←←←←←←←"
@@ -134,7 +130,7 @@ Verify(){
 #--------------------------------------------------------------------------
         elif [ "$REPLY" == "11" ]
         then
-                gnome-terminal -x bash -c 'sudo add-apt-repository ppa:webupd8team/Subl$
+                gnome-terminal -x bash -c ' sudo add-apt-repository ppa:webupd8team/sublime-text-3; sudo apt-get update; sudo apt-get install sublime-text-installer;
                 echo "→→→→→→→→→→→→→→→→→→→→→→→"
                 echo "[!] Pacote Sublime-text"
                 echo "→→→→→→→→→→→→→→→→→→→→→→→"

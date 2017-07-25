@@ -1,19 +1,17 @@
-# P-Pack
---------------------------------------------------------------------------
+  P-Pack
 
- Code by: Psychøraptør, Agent-2k40 - DarkBunny
+  -----------------------------------------------------
+  Code by: CØÐ'A®C, Agent-2k40 - DarkBunny
+  -----------------------------------------------------
 
---------------------------------------------------------------------------
+  - Programa desenvolvido para Ubuntu (Por enquanto)
+  - Linguagem de programação BashScript
+  - Facil manuseio
+  - Desenvolvido com intuito de facilitar possiveis instalações de arquivos.
 
- - Programa desenvolvido para Ubuntu (Por enquanto)
- - Linguagem de programação BashScript
- - Facil manuseio
- - Desenvolvido com intuito de facilitar possiveis instalações de arquivos.
-
- - Espero que aproveite!
-
---------------------------------------------------------------------------
-
- "DarkBunny, estamos sempre por perto..."
-
---------------------------------------------------------------------------
+  - Corra com: chmod +x P-Pack; 
+	       ./P-Pack 
+ 
+  -----------------------------------------------------
+  "DarkBunny, estamos sempre por perto..."
+  -----------------------------------------------------
